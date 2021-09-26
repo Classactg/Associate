@@ -26,6 +26,7 @@ const actual =  fizzbuzz(2);
 expect(actual).to.deep.equal(expected)
 
     })
+    // Here starts week 6.
     it('Get "Fizz" when I pass in 3.', function(){
         const expected = "Fizz";
 const actual =  fizzbuzz(3);
