@@ -74,7 +74,9 @@ print (BASE_DIR)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/ 'hello_world/templates'],
+        # 'DIRS': [BASE_DIR/'hello_world/templates'],
+        # 'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'hello_world/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

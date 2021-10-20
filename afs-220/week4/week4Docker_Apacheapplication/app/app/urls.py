@@ -20,10 +20,10 @@ from hello_world import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.IndexView.as_view(), name='homepage'),
-    # path('/locations', views.LocationsView.as_view(), name='locations'),
-    # path('/gallary', views.GallaryView.as_view(), name='gallary'),
-    # path('/about', views.AboutView.as_view(), name='about'),
-    # path('/contacts', views.ContactsView.as_view(), name='contacts'),
-    # path('/services', views.ServicesView.as_view(), name='services'),
+    path('restaurant/', views.index, name='homepage'),
+    path('menu/', views.MenuView, name='menu'),
+    path('gallary/', views.GallaryView, name='gallary'),
+    path('about/', views.AboutView, name='about'),
+    path('contacts/', views.ContactsView, name='contacts'),
+    path('services/', views.ServicesView, name='services'),
 ]
